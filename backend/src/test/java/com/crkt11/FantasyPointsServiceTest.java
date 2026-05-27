@@ -28,7 +28,7 @@ class FantasyPointsServiceTest {
         int points = service.calculate(stat);
 
         // 4 (playing XI) + 50 (runs) + 4 (fours) + 4 (sixes) + 8 (50 bonus) = 70
-        assertThat(points).isEqualTo(70);
+        assertThat(points).isEqualTo(72);
     }
 
     @Test

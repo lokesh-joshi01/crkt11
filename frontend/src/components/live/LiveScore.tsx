@@ -23,7 +23,6 @@ export default function LiveScore() {
   if (isError || !match) return <div className="text-muted text-sm p-4">No live match right now.</div>
 
   const batters = match.playerStats.filter((s) => s.balls > 0 && s.runs >= 0).slice(0, 3)
-  const bowlers = match.playerStats.filter((s) => s.oversBowled > 0).slice(0, 2)
 
   return (
     <div className="space-y-4">
